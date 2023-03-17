@@ -8,6 +8,8 @@ module.exports = {
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
     'import/no-import-module-exports': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
+    'jsx-a11y/label-has-for': 'off',
   },
   parserOptions: {
     ecmaVersion: 2020,
@@ -20,6 +22,13 @@ module.exports = {
     'import/resolver': {
       // See https://github.com/benmosher/eslint-plugin-import/issues/1396#issuecomment-575727774 for line below
       node: {},
+      'babel-module': {
+        alias: {
+          '@components': './src/menrva/components',
+          '@pages': './src/menrva/pages',
+          '@database': './src/menrva/database',
+        },
+      },
       webpack: {
         config: require.resolve('./.erb/configs/webpack.config.eslint.ts'),
       },

@@ -5,15 +5,30 @@
     "module": "commonjs",
     "lib": ["dom", "es2021"],
     "jsx": "react-jsx",
-    "strict": true,
-    "sourceMap": true,
     "baseUrl": "./src",
+    "outDir": ".erb/dll",
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": true,
+    "strict": true,
+    "pretty": true,
+    "sourceMap": true,
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    /* Module Resolution Options */
     "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "allowJs": true,
-    "outDir": ".erb/dll"
+    "paths": {
+      "@components/*": ["./src/menrva/components/*"],
+      "@pages/*": ["./src/menrva/pages/*"],
+      "@database/*": ["./src/menrva/database/*"]
+    }
   },
   "exclude": ["test", "release/build", "release/app/dist", ".erb/dll"]
 }

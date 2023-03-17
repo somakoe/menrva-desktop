@@ -1,0 +1,85 @@
+/*
+
+* Override Pages default styles or create your own styles here
+
+*/
+.jumbotron h1.large-demo-text {
+  font-size: 150px;
+}
+
+.icon-text-search {
+  font-size: 42px;
+  width: 150%;
+}
+
+.card-min-h-300px {
+  min-height: 300px;
+  max-height: 300px;
+}
+
+.card-min-h-200px {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.card-min-h-220px {
+  min-height: 220px;
+  max-height: 220px;
+}
+
+.text-primary {
+  color: #148e63;
+}
+
+.page-sidebar .sidebar-menu .menu-items > li {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.page-sidebar .sidebar-menu .menu-items > li > a.open {
+  background: transparent;
+}
+
+.page-sidebar .sidebar-menu .menu-items > li > a > .title {
+  color: #929aac;
+}
+
+.page-sidebar .sidebar-menu .menu-items li:hover > .icon-thumbnail,
+.page-sidebar .sidebar-menu .menu-items li.open > .icon-thumbnail,
+.page-sidebar .sidebar-menu .menu-items li.active > .icon-thumbnail {
+  color: #19ad79;
+}
+
+.page-sidebar .sidebar-menu .menu-items li:hover,
+.page-sidebar .sidebar-menu .menu-items li.open,
+.page-sidebar .sidebar-menu .menu-items li.active {
+  background: #f5f5f5;
+}
+
+.page-sidebar .sidebar-menu .menu-items li:hover > a > .title,
+.page-sidebar .sidebar-menu .menu-items li.open > a > .title,
+.page-sidebar .sidebar-menu .menu-items li.active > a > .title {
+  color: #19ad79;
+}
+
+.page-sidebar .sidebar-menu .menu-items li:hover > a > .details,
+.page-sidebar .sidebar-menu .menu-items li.open > a > .details,
+.page-sidebar .sidebar-menu .menu-items li.active > a > .details {
+  color: #19ad79;
+}
+
+.btn-icon-link.invert:hover:not(.active) {
+  color: #19ad79;
+}
+.btn-icon-link.invert:hover:not(.active):active {
+  color: #19ad79;
+}
+
+.login-wrapper {
+  /* background: url(../img/login/background.jpg); */
+  background-color: wheat;
+}
+
+.table-profile {
+  max-width: 220px;
+}
